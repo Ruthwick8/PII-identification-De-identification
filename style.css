@@ -1,0 +1,102 @@
+/* style.css */
+QMainWindow, QWidget {
+    background-color: #F0F2F5;
+    font-family: 'Segoe UI';
+}
+QGroupBox {
+    background-color: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    border-radius: 8px;
+    margin-top: 20px;      /* extra top margin for title space */
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    margin-top: -10px;     /* move title 10px up */
+    margin-left: 10px;     /* little left padding */
+    padding: 0 6px;
+    color: blue;
+    background-color: #F0F2F5; /* same as window bg so border won’t cut text */
+    font-weight: bold;
+}
+
+
+
+
+QPushButton {
+    font-size: 10pt;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #E0E0E0;
+    border: 1px solid #C0C0C0;
+}
+
+QPushButton:hover {
+    background-color: #D5D5D5;
+}
+
+QPushButton#Accent {
+    background-color: #50C878;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+QPushButton#Accent:hover {
+    background-color: #45a049;
+}
+
+QPushButton#Nav {
+    background-color: #4A90E2;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+QPushButton#Nav:hover {
+    background-color: #357ABD;
+}
+
+QLabel {
+    font-size: 10pt;
+    background-color: transparent;
+}
+
+QLineEdit, QComboBox {
+    font-size: 10pt;
+    padding: 5px;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+}
+
+QTableWidget {
+    border: 1px solid #D0D0D0;
+}
+
+QHeaderView::section {
+    background-color: #E8EAF6;
+    padding: 4px;
+    border: 1px solid #D0D0D0;
+    font-weight: bold;
+}
+
+QTabWidget::pane {
+    border: 1px solid #D0D0D0;
+    border-top: none;
+}
+
+QTabBar::tab {
+    background: #E0E0E0;
+    padding: 10px;
+    border: 1px solid #C0C0C0;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background: #FFFFFF;
+}
